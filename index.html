@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LuxSphere - Premium Business Automation Platform</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Playfair+Display:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Background Elements -->
+    <div class="bg-orbs">
+        <div class="orb orb-1"></div>
+        <div class="orb orb-2"></div>
+        <div class="orb orb-3"></div>
+    </div>
+    <div class="grid-overlay"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar glass-effect">
+        <div class="nav-container">
+            <div class="logo">
+                <div class="logo-icon">
+                    <div class="logo-sphere"></div>
+                </div>
+                <span class="logo-text">Lux<span class="gold">Sphere</span></span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link active">Accueil</a></li>
+                <li><a href="#features" class="nav-link">Fonctionnalités</a></li>
+                <li><a href="#dashboard" class="nav-link">Dashboard</a></li>
+                <li><a href="#pricing" class="nav-link">Tarifs</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <button class="cta-button">
+                <span>Essai Gratuit</span>
+                <i class="fas fa-arrow-right"></i>
+            </button>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="badge glass-effect" data-aos="fade-down">
+                    <i class="fas fa-crown gold"></i>
+                    <span>La Solution Premium pour les Entreprises</span>
+                </div>
+                <h1 class="hero-title" data-aos="fade-up" data-aos-delay="100">
+                    Transformez Votre
+                    <span class="gradient-text">Entreprise</span>
+                    Avec l'Intelligence
+                </h1>
+                <p class="hero-subtitle" data-aos="fade-up" data-aos-delay="200">
+                    LuxSphere révolutionne l'automatisation des processus métier avec une plateforme SaaS de nouvelle génération. 
+                    Puissance, élégance et efficacité réunies.
+                </p>
+                <div class="hero-buttons" data-aos="fade-up" data-aos-delay="300">
+                    <button class="primary-button">
+                        <span>Commencer Maintenant</span>
+                        <i class="fas fa-rocket"></i>
+                    </button>
+                    <button class="secondary-button glass-effect">
+                        <i class="fas fa-play-circle"></i>
+                        <span>Voir la Démo</span>
+                    </button>
+                </div>
+                <div class="hero-stats" data-aos="fade-up" data-aos-delay="400">
+                    <div class="stat-item">
+                        <div class="stat-number">50K+</div>
+                        <div class="stat-label">Utilisateurs</div>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat-item">
+                        <div class="stat-number">99.9%</div>
+                        <div class="stat-label">Uptime</div>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat-item">
+                        <div class="stat-number">150+</div>
+                        <div class="stat-label">Intégrations</div>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-visual" data-aos="fade-left" data-aos-delay="500">
+                <div class="floating-dashboard">
+                    <div class="dashboard-card glass-effect card-main">
+                        <div class="card-header">
+                            <h3>Performance Dashboard</h3>
+                            <div class="card-actions">
+                                <span class="dot"></span>
+                                <span class="dot"></span>
+                                <span class="dot"></span>
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <div class="metric-large">
+                                <div class="metric-value">$2.4M</div>
+                                <div class="metric-change positive">
+                                    <i class="fas fa-arrow-up"></i> +24.5%
+                                </div>
+                            </div>
+                            <div class="chart-mini">
+                                <canvas id="miniChart"></canvas>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="dashboard-card glass-effect card-small card-1">
+                        <div class="icon-box gold-gradient">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <div class="card-info">
+                            <div class="card-value">+34%</div>
+                            <div class="card-label">Growth</div>
+                        </div>
+                    </div>
+                    <div class="dashboard-card glass-effect card-small card-2">
+                        <div class="icon-box gold-gradient">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <div class="card-info">
+                            <div class="card-value">12.4K</div>
+                            <div class="card-label">Users</div>
+                        </div>
+                    </div>
+                    <div class="dashboard-card glass-effect card-small card-3">
+                        <div class="icon-box gold-gradient">
+                            <i class="fas fa-bolt"></i>
+                        </div>
+                        <div class="card-info">
+                            <div class="card-value">98.2%</div>
+                            <div class="card-label">Speed</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features">
+        <div class="section-container">
+            <div class="section-header" data-aos="fade-up">
+                <div class="section-badge glass-effect">
+                    <i class="fas fa-sparkles gold"></i>
+                    <span>Fonctionnalités</span>
+                </div>
+                <h2 class="section-title">Des Outils Puissants Pour <span class="gradient-text">Réussir</span></h2>
+                <p class="section-subtitle">Découvrez notre suite complète d'outils d'automatisation conçus pour propulser votre entreprise vers l'excellence</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card glass-effect" data-aos="fade-up" data-aos-delay="100">
+                    <div class="feature-icon gold-gradient">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <h3 class="feature-title">Automation Intelligente</h3>
+                    <p class="feature-description">Automatisez vos workflows avec l'IA pour gagner du temps et éliminer les tâches répétitives</p>
+                    <a href="#" class="feature-link">
+                        <span>En savoir plus</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+                <div class="feature-card glass-effect" data-aos="fade-up" data-aos-delay="200">
+                    <div class="feature-icon gold-gradient">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <h3 class="feature-title">Analytics Avancés</h3>
+                    <p class="feature-description">Visualisez vos données en temps réel avec des tableaux de bord personnalisables et intuitifs</p>
+                    <a href="#" class="feature-link">
+                        <span>En savoir plus</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+                <div class="feature-card glass-effect" data-aos="fade-up" data-aos-delay="300">
+                    <div class="feature-icon gold-gradient">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3 class="feature-title">Sécurité Maximum</h3>
+                    <p class="feature-description">Protection de niveau entreprise avec chiffrement de bout en bout et conformité RGPD</p>
+                    <a href="#" class="feature-link">
+                        <span>En savoir plus</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+                <div class="feature-card glass-effect" data-aos="fade-up" data-aos-delay="400">
+                    <div class="feature-icon gold-gradient">
+                        <i class="fas fa-plug"></i>
+                    </div>
+                    <h3 class="feature-title">Intégrations Seamless</h3>
+                    <p class="feature-description">Connectez-vous à plus de 150 applications tierces en quelques clics seulement</p>
+                    <a href="#" class="feature-link">
+                        <span>En savoir plus</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+                <div class="feature-card glass-effect" data-aos="fade-up" data-aos-delay="500">
+                    <div class="feature-icon gold-gradient">
+                        <i class="fas fa-tachometer-alt"></i>
+                    </div>
+                    <h3 class="feature-title">Performance Optimale</h3>
+                    <p class="feature-description">Infrastructure cloud ultra-rapide garantissant 99.9% de disponibilité et temps de réponse minimal</p>
+                    <a href="#" class="feature-link">
+                        <span>En savoir plus</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+                <div class="feature-card glass-effect" data-aos="fade-up" data-aos-delay="600">
+                    <div class="feature-icon gold-gradient">
+                        <i class="fas fa-headset"></i>
+                    </div>
+                    <h3 class="feature-title">Support Premium 24/7</h3>
+                    <p class="feature-description">Assistance dédiée disponible à tout moment pour vous accompagner dans votre réussite</p>
+                    <a href="#" class="feature-link">
+                        <span>En savoir plus</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Dashboard Preview Section -->
+    <section id="dashboard" class="dashboard-preview">
+        <div class="section-container">
+            <div class="section-header" data-aos="fade-up">
+                <div class="section-badge glass-effect">
+                    <i class="fas fa-desktop gold"></i>
+                    <span>Interface</span>
+                </div>
+                <h2 class="section-title">Une Interface <span class="gradient-text">Exceptionnelle</span></h2>
+                <p class="section-subtitle">Expérience utilisateur de luxe avec des visualisations 3D immersives</p>
+            </div>
+            <div class="dashboard-showcase" data-aos="zoom-in" data-aos-delay="200">
+                <div class="showcase-bg glass-effect"></div>
+                <div class="showcase-content">
+                    <div class="showcase-grid">
+                        <div class="showcase-card glass-effect">
+                            <div class="showcase-header">
+                                <h4>Revenue Analytics</h4>
+                                <span class="badge-gold">Live</span>
+                            </div>
+                            <div class="showcase-chart">
+                                <canvas id="revenueChart"></canvas>
+                            </div>
+                        </div>
+                        <div class="showcase-card glass-effect">
+                            <div class="showcase-header">
+                                <h4>Key Metrics</h4>
+                            </div>
+                            <div class="metrics-list">
+                                <div class="metric-row">
+                                    <span>Conversion Rate</span>
+                                    <span class="metric-val gold">4.8%</span>
+                                </div>
+                                <div class="metric-row">
+                                    <span>Active Users</span>
+                                    <span class="metric-val gold">24.3K</span>
+                                </div>
+                                <div class="metric-row">
+                                    <span>Avg. Session</span>
+                                    <span class="metric-val gold">12m 34s</span>
+                                </div>
+                                <div class="metric-row">
+                                    <span>ROI</span>
+                                    <span class="metric-val gold">+284%</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="showcase-card glass-effect">
+                            <div class="showcase-header">
+                                <h4>Recent Activity</h4>
+                            </div>
+                            <div class="activity-list">
+                                <div class="activity-item">
+                                    <div class="activity-icon"><i class="fas fa-check-circle gold"></i></div>
+                                    <div class="activity-text">
+                                        <div>Workflow automatisé complété</div>
+                                        <small>Il y a 2 minutes</small>
+                                    </div>
+                                </div>
+                                <div class="activity-item">
+                                    <div class="activity-icon"><i class="fas fa-user-plus gold"></i></div>
+                                    <div class="activity-text">
+                                        <div>Nouvel utilisateur ajouté</div>
+                                        <small>Il y a 15 minutes</small>
+                                    </div>
+                                </div>
+                                <div class="activity-item">
+                                    <div class="activity-icon"><i class="fas fa-chart-line gold"></i></div>
+                                    <div class="activity-text">
+                                        <div>Rapport généré</div>
+                                        <small>Il y a 1 heure</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="pricing">
+        <div class="section-container">
+            <div class="section-header" data-aos="fade-up">
+                <div class="section-badge glass-effect">
+                    <i class="fas fa-tag gold"></i>
+                    <span>Tarification</span>
+                </div>
+                <h2 class="section-title">Choisissez Votre <span class="gradient-text">Formule</span></h2>
+                <p class="section-subtitle">Des plans adaptés à chaque taille d'entreprise</p>
+            </div>
+            <div class="pricing-grid">
+                <div class="pricing-card glass-effect" data-aos="fade-up" data-aos-delay="100">
+                    <div class="pricing-header">
+                        <h3>Starter</h3>
+                        <p>Pour les petites équipes</p>
+                    </div>
+                    <div class="pricing-price">
+                        <span class="currency">€</span>
+                        <span class="amount">49</span>
+                        <span class="period">/mois</span>
+                    </div>
+                    <ul class="pricing-features">
+                        <li><i class="fas fa-check gold"></i> <span>Jusqu'à 5 utilisateurs</span></li>
+                        <li><i class="fas fa-check gold"></i> <span>10 workflows automatisés</span></li>
+                        <li><i class="fas fa-check gold"></i> <span>Analytics basiques</span></li>
+                        <li><i class="fas fa-check gold"></i> <span>Support email</span></li>
+                        <li><i class="fas fa-check gold"></i> <span>API access</span></li>
+                    </ul>
+                    <button class="pricing-button secondary-button">
+                        <span>Commencer</span>
+                    </button>
+                </div>
+                <div class="pricing-card glass-effect featured" data-aos="fade-up" data-aos-delay="200">
+                    <div class="featured-badge">
+                        <i class="fas fa-crown"></i> Populaire
+                    </div>
+                    <div class="pricing-header">
+                        <h3>Professional</h3>
+                        <p>Pour les entreprises en croissance</p>
+                    </div>
+                    <div class="pricing-price">
+                        <span class="currency">€</span>
+                        <span class="amount">149</span>
+                        <span class="period">/mois</span>
+                    </div>
+                    <ul class="pricing-features">
+                        <li><i class="fas fa-check gold"></i> <span>Jusqu'à 25 utilisateurs</span></li>
+                        <li><i class="fas fa-check gold"></i> <span>Workflows illimités</span></li>
+                        <li><i class="fas fa-check gold"></i> <span>Analytics avancés</span></li>
+                        <li><i class="fas fa-check gold"></i> <span>Support prioritaire 24/7</span></li>
+                        <li><i class="fas fa-check gold"></i> <span>Toutes les intégrations</span></li>
+                        <li><i class="fas fa-check gold"></i> <span>Custom branding</span></li>
+                    </ul>
+                    <button class="pricing-button primary-button">
+                        <span>Commencer</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </button>
+                </div>
+                <div class="pricing-card glass-effect" data-aos="fade-up" data-aos-delay="300">
+                    <div class="pricing-header">
+                        <h3>Enterprise</h3>
+                        <p>Pour les grandes organisations</p>
+                    </div>
+                    <div class="pricing-price">
+                        <span class="amount">Sur mesure</span>
+                    </div>
+                    <ul class="pricing-features">
+                        <li><i class="fas fa-check gold"></i> <span>Utilisateurs illimités</span></li>
+                        <li><i class="fas fa-check gold"></i> <span>Workflows personnalisés</span></li>
+                        <li><i class="fas fa-check gold"></i> <span>Analytics entreprise</span></li>
+                        <li><i class="fas fa-check gold"></i> <span>Support dédié</span></li>
+                        <li><i class="fas fa-check gold"></i> <span>SLA garanti</span></li>
+                        <li><i class="fas fa-check gold"></i> <span>Infrastructure privée</span></li>
+                        <li><i class="fas fa-check gold"></i> <span>Formation sur site</span></li>
+                    </ul>
+                    <button class="pricing-button secondary-button">
+                        <span>Nous contacter</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="cta-container glass-effect" data-aos="zoom-in">
+            <div class="cta-content">
+                <h2>Prêt à Transformer Votre Entreprise ?</h2>
+                <p>Rejoignez plus de 50 000 entreprises qui ont choisi LuxSphere pour leur transformation digitale</p>
+                <div class="cta-buttons">
+                    <button class="primary-button large">
+                        <span>Démarrer Gratuitement</span>
+                        <i class="fas fa-rocket"></i>
+                    </button>
+                    <button class="secondary-button large glass-effect">
+                        <i class="fas fa-calendar-alt"></i>
+                        <span>Planifier une Démo</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-grid">
+                <div class="footer-column">
+                    <div class="footer-logo">
+                        <div class="logo-icon">
+                            <div class="logo-sphere"></div>
+                        </div>
+                        <span class="logo-text">Lux<span class="gold">Sphere</span></span>
+                    </div>
+                    <p class="footer-description">La plateforme SaaS premium pour l'automatisation des processus métier de nouvelle génération.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link glass-effect"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link glass-effect"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="social-link glass-effect"><i class="fab fa-github"></i></a>
+                        <a href="#" class="social-link glass-effect"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h4>Produit</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Fonctionnalités</a></li>
+                        <li><a href="#">Intégrations</a></li>
+                        <li><a href="#">Tarifs</a></li>
+                        <li><a href="#">Sécurité</a></li>
+                        <li><a href="#">Roadmap</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Ressources</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Documentation</a></li>
+                        <li><a href="#">API</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Guides</a></li>
+                        <li><a href="#">Webinaires</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Entreprise</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">À propos</a></li>
+                        <li><a href="#">Carrières</a></li>
+                        <li><a href="#">Partenaires</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">Mentions légales</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 LuxSphere. Tous droits réservés.</p>
+                <div class="footer-bottom-links">
+                    <a href="#">Confidentialité</a>
+                    <a href="#">Conditions</a>
+                    <a href="#">Cookies</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
